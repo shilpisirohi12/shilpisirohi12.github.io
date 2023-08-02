@@ -35,7 +35,7 @@
         "chokidar": "^3.5.2",
         "glob-parent": "^6.0.0",
         "glob-stream": "^5.2.0",
-        "gulp-cli": "^1.4.0",
+        "gulp-cli": "^2.3.0",
         "jquery": "^3.5.1",
         "lodash": "^4.17.21",
         "object-path": "^0.11.5",

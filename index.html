@@ -1,484 +1,823 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Portfolio - Shilpi Sirohi</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <!--<link href="css/resume.min.css" rel="stylesheet">-->
-  <link href="css/resume.css" rel="stylesheet">
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shilpi Sirohi | Software Engineer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
 </head>
 
-<body id="page-top">
+<body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Shilpi Sirohi</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-        </li>        
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#awards">Certifications</a>
-        </li>
-      </ul>
+    <!-- ========== MOBILE TOPBAR ========== -->
+    <header class="mobile-header" id="mobileHeader">
+        <a href="#about" class="mobile-logo">Shilpi Sirohi</a>
+        <div class="mobile-controls">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+            <button class="burger" id="burger" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== MOBILE NAV DRAWER ========== -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <nav>
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#experience" class="drawer-link">Experience</a>
+            <a href="#education" class="drawer-link">Education</a>
+            <a href="#skills" class="drawer-link">Skills</a>
+            <a href="#projects" class="drawer-link">Projects</a>
+            <a href="#certifications" class="drawer-link">Certifications</a>
+            <a href="#interests" class="drawer-link">Interests</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+        </nav>
     </div>
-  </nav>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
 
-  <div class="container-fluid p-0">
+    <!-- ========== LAYOUT WRAPPER ========== -->
+    <div class="layout">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-      <div class="w-100">
-        <h1 class="mb-0">Shilpi
-          <span class="text-primary">Sirohi</span>
-        </h1>
-        <div class="subheading mb-5">Mississauga, ON. (647) 701-2376
-          <a href="mailto:shilpisirohi12@gmail.com">shilpisirohi12@gmail.com</a>
-        </div>
-        <p class="lead mb-5"><i>Java developer with 11+ years of progressive experience in IT industry,
-          who is capable in not only to fix a problem but to design and develop a futurist, optimized, and scalable solution. 
-          I learned not to fall in love with one language or technology as it keeps on changing. 
-          I learned new technologies and automation tools while working on the live projects in my previous jobs. 
-          This made me specialized in learning new skills, programming languages, design principles, and problem-solving quickly.
-          <br>I'm a firm believer of quality over quantity. That's why I keep on setting goals for me which helps me to improve myself professionally and personally.  </p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/shilpi-sirohi" target="_blank" title="Linkedin">
-            <i class="fab fa-linkedin-in"></i>
+        <!-- ========== LEFT SIDEBAR ========== -->
+        <aside class="sidebar" id="sidebar">
 
-          <a href="Shilpi_Sirohi-Resume.pdf" target="_blank" title="Resume">
-            <i class="fas fa-file-pdf"></i>
-          </a>
-          <!--<a href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>-->
-        </div>
-      </div>
-    </section>
+            <div class="sidebar-inner">
 
-    <hr class="m-0">
+                <!-- Avatar -->
+                <div class="avatar">
+                    <span>SS</span>
+                </div>
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-      <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
+                <!-- Name & Title -->
+                <h1 class="sidebar-name">Shilpi Sirohi</h1>
+                <p class="sidebar-title">Senior Software Engineer</p>
+                <p class="sidebar-subtitle">Java · Spring Boot · AI Enthusiast · AWS Cloud</p>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Specialist - Software Engineering</h3>
-            <div class="subheading mb-3">LTIMindtree
-              <div class="subheading1 mb-4">Client: Citibank</div>   
-            </div> 
-            <p>
-              •	Designed and developed scalable and high-performance Java applications using Spring Framework. <br>
-              •	Implemented RESTful APIs and integrated third-party services into the application using Spring Boot. <br>
-              •	Create the scripts to deploy the applications on open-source private cloud. <br>
-              •	Collaborated with QA/Testing teams to ensure high-quality software delivery through unit testing, integration testing, and bug fixing. <br>
-              •	Resolved complex technical issues and provided support during production deployments. <br>
-              •	Co-ordinate with the Business Analysis team to understand the requirements effectively and prepare high level design documents with the help of the team. <br>
-              •	Prepare L0, L1, L2 & L3 estimates for the frozen change requests and list detailed tasks for each change request for a release with lead’s help and explain the team about their expected contribution. <br>
-              •	Adhere to agile development methodologies, including sprint planning, daily stand-ups, and respective meetings. <br>
-              •	Identify and maintain action items and issue lists during code development and mitigate risks for each change request and release cycle and prepare risk mitigation plan. <br>
-              •	Involved in project architectural discussion and provide inputs to prepare the technical architecture using UML Diagram. <br>
-              •	Perform code review, code linting, task review, unit & integration testing, defects review and consistently follow up and guide the team on controlling the residual defects. <br>
-              •	Adhere to ethical standards and maintain integrity in work while dealing with confidential data or sensitive information. <br>
-              •	Implement proprietary technologies, tools, and methodologies.  <br>
-              •	Migrate the classical application to microservices.             
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">September 2021 - Present</span>
-          </div>
-        </div>
+                <!-- Location badge -->
+                <div class="sidebar-location">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Mississauga, ON
+                </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Java Software Developer</h3>
-            <div class="subheading mb-3">millennium software inc
-              <div class="subheading1 mb-4">Client: Ford Motor Credit - FMCC</div>   
-            </div> 
-            <p>
-              • Lead the end to end design and development of cloud native applications in the finance domain.<br>
-              • Developed the highly scalable applications and comply with industry standards.<br>
-              • Developed highly secure restful spring boot webservices by applying Test driven approach.<br>
-              • Build the CI/CD pipelines for APIs and deploy the APIs on PCF cloud.<br>
-              • Setup tools for the continous monitoring of the applications on the cloud.<br>
-              • Modernize the old process and applications.
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">February 2021 - September 2021</span>
-          </div>
-        </div>
+                <!-- Nav links -->
+                <nav class="sidebar-nav">
+                    <a href="#about" class="nav-item active">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="8" r="4" />
+                            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
+                        </svg>
+                        About
+                    </a>
+                    <a href="#experience" class="nav-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                        </svg>
+                        Experience
+                    </a>
+                    <a href="#education" class="nav-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                        </svg>
+                        Education
+                    </a>
+                    <a href="#skills" class="nav-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                        Skills
+                    </a>
+                    <a href="#projects" class="nav-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                            <polyline points="2 17 12 22 22 17" />
+                            <polyline points="2 12 12 17 22 12" />
+                        </svg>
+                        Projects
+                    </a>
+                    <a href="#certifications" class="nav-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="8" r="6" />
+                            <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+                        </svg>
+                        Certifications
+                    </a>
+                    <a href="#interests" class="nav-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                        Interests
+                    </a>
+                    <a href="#contact" class="nav-item">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        Contact
+                    </a>
+                </nav>
 
+                <!-- Social links -->
+                <div class="sidebar-socials">
+                    <a href="https://github.com/shilpisirohi12" target="_blank" rel="noopener" class="social-icon"
+                        title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path
+                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/shilpisirohi" target="_blank" rel="noopener" class="social-icon"
+                        title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="mailto:shilpisirohi12@gmail.com" class="social-icon" title="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                            height="18">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                    </a>
+                </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Graduate Research Assistant</h3>
-            <div class="subheading mb-3">University Of South Florida</div>
-            <!--<p>Build web-based visualization tools with automation of data load and analytics. Create web-based visualizations based on analysis of motorcycle accidents. Verify accuracy and completeness of data.</p>-->
-            <p>• Design and developed web application in JavaScript (Node.js, Express.js, Charts.js and leaflet.js) for
-              motorcycle accidents in Florida.<br>
-              • Build restful web service by writing AWS Lambda functions in java to automate the process of
-              information retrieval, verify accuracy and completeness of data.<br>
-              • Deploy the visualization tool on EC2 Linux instance, and database on AWS RDS.<br>
-              • Migrate existing WordPress websites to AWS and set up CI/CD pipeline.<br>
-              
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2019 - December 2020</span>
-          </div>
-        </div>
+                <!-- Resume -->
+                <a href="resume.pdf" target="_blank" rel="noopener" class="resume-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
+                    </svg>
+                    View Resume
+                </a>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Applications Engineer</h3>
-            <div class="subheading mb-3">Oracle Corporation</div>
-            <!--<p>Built Cloud based applications, designed user interfaces, and developed the API of RESTFUL webservices. Converted Python code to Java via object-oriented software methodologies. Wrote SQL procedures, functions, and classes in Oracle 12c. Wrote UNIX shell scripts and automated jobs in cron scheduler. Setup environment and validated, cleansed, and loaded user data with configuration and running of initial processes. Trained interns on products and mentored five colleagues.</p>-->
-            <p>• Lead the system design and feature development lifecycle to view and manage the services,
-              processes, and application logs by using java and spring boot technologies. It reduced the ticket
-              resolution time of L2 Support Team.<br>
-              • Developed MySQL scripts to automate the validation process of the large-scale data, reduced the
-              data load time by 10% by fine-tuning the existing functions and queries. Developed Unix scripts to
-              automatically send alerts in case of delays and failures.<br>
-              • Driven the team of two developers with agile and lean philosophies to deliver major Dataraker
-              product integration with Meter Data Management (MDM) Oracle utility by building REST APIs in
-              Java.<br>
-              • Won cash award at Annual Innovation Summit for recommendation to automate formerly manual
-              process of creating customer XMLs with a new Windows Desktop tool in JavaFX.<br>
-              • Conceptualized and released features to show and color-code meter transformer, grids, and
-              customer data on maps using Java REST API and JavaScript library with longitude and latitude
-              positioning.<br>
-              • Collaborate with different teams, train, and mentor team members and clients.<br>
-              
-              </p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">February 2014 - December 2018</span>
-          </div>
-        </div>
+                <!-- Theme toggle -->
+                <button class="sidebar-theme" id="themeToggle2" aria-label="Toggle theme">
+                    <span class="th-thumb">
+                        <!-- Moon icon (dark mode) -->
+                        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            width="22" height="22">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                            <path d="M17 6l1.5 1.5M19 3l.5.5" stroke-linecap="round" />
+                        </svg>
+                        <!-- Sun icon (light mode) -->
+                        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                            width="22" height="22">
+                            <circle cx="12" cy="12" r="5" />
+                            <line x1="12" y1="1" x2="12" y2="3" />
+                            <line x1="12" y1="21" x2="12" y2="23" />
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                            <line x1="1" y1="12" x2="3" y2="12" />
+                            <line x1="21" y1="12" x2="23" y2="12" />
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                        </svg>
+                    </span>
+                    <span class="th-label">Night Mode</span>
+                </button>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Software Engineer</h3>
-            <div class="subheading mb-3">Tech Mahindra
-              <div class="subheading1 mb-4">Client: Thomson Reuters</div> 
             </div>
-            <!--<p>Engaged with clients to understand and document requirements, prioritize features, and finalize development schedules. Wrote code and completed unit testing to receive XML files from MQ, parse files, and load data into database. Wrote PL/SQL packages to insert and read Java classes from Oracle DB. Carried out performance unit testing, system testing, user acceptance testing, and business verification testing. Provided post-production support.</p>-->
-            •	Engaged with clients to understand and document requirements, prioritize features, and finalize development schedules. <br>
-            •	Wrote code and completed unit testing in Java and JUnit to receive XML files from MQ, parse files, and load data into database. <br>
-            •	Carried out performance unit testing, system testing, user acceptance testing, and business verification testing. Provided post-production support. <br>
-            •	Generated 25% increase in profitability in APAC and Americas for Thomson Reuters by delivering capability to calculate total cost of products and services per subscriber. <br>
-            •	Recognized as top scorer in completion of three-month onboarding program. <br>
+        </aside>
 
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2010 - February 2014</span>
-          </div>
-        </div>
+        <!-- ========== MAIN CONTENT ========== -->
+        <main class="main-content">
 
-      </div>
+            <!-- About -->
+            <section class="section reveal" id="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-body">
+                    <p>
+                        I'm a Java specialist with <strong>13+ years</strong> of progressive experience, from
+                        foundational work at Oracle to enterprise deliveries at LTIMindtree. I've had the privilege of
+                        building scalable, mission-critical solutions for global leaders like <strong>Citibank</strong>,
+                        <strong>Ford Motor Credit</strong>, and <strong>Thomson Reuters</strong>—across finance, cloud
+                        infrastructure, and data-heavy ecosystems.
+                    </p>
+                    <p>
+                        My strength lies in designing clean, performant systems that stand the test of real-world scale
+                        and complexity. I pride myself on rapidly adopting emerging technologies and applying sharp
+                        problem-solving skills to deliver value quickly, rather than staying siloed in one ecosystem.
+                        <br>Today, I enhance my workflow with AI coding assistants (Copilot, Claude, and similar tools)
+                        to
+                        iterate faster, discover better implementations, and dedicate more time to strategic
+                        architecture.
+                    </p>
+                    <p>What energizes me most is working on demanding backend challenges in innovative, high-impact
+                        settings: leading cloud migrations that modernize legacy estates, engineering high-throughput
+                        data pipelines for real-time processing, and crafting scalable platforms that power critical
+                        business operations under pressure.</p>
 
-    </section>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Mississauga, ON</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <a href="mailto:shilpisirohi12@gmail.com"
+                                class="info-value link">shilpisirohi12@gmail.com</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Phone</span>
+                            <a href="tel:6477012376" class="info-value link">(647) 701-2376</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Status</span>
+                            <span class="info-value open">Open to opportunities</span>
+                        </div>
+                    </div>
 
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-      <div class="w-100">
-        <h2 class="mb-5">Education</h2>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">University of South Florida</h3>
-            <div class="subheading mb-3">Masters Of Science</div>
-            <div>Computer Science</div>
-            <p>GPA: 3.83</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">January 2019 - December 2020</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-          <div class="resume-content">
-            <h3 class="mb-0">Uttar Pradesh Technical University</h3>
-            <div class="subheading mb-3">Masters Of Science</div>
-            <div>Computer Applications</div>
-            <p>GPA: 3.37</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2007 - July 2010</span>
-          </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Choudhary Charan Singh University</h3>
-            <div class="subheading mb-3">Bachelor Of Science</div>
-            <div>Mathematics and Statistics</div>
-            <p>GPA: 3.12</p>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">August 2004 - July 2007</span>
-          </div>
-        </div>        
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-      <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
-
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Java 8</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Spring Framework</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Spring Boot</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Hibernate</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Maven</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Gradle</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Kafka</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">JUnit</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Mockito</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Swagger</button>
-          </li><br>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">SQL databases</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Restful APIs</button>
-          </li> 
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Github</button>
-          </li>  
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Jenkins</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">PCF Cloud</button>
-          </li>  
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Openshift Cloud</button>
-          </li>     
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">AWS</button>
-          </li>  
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Splunk</button>
-          </li>     
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Python</button>
-          </li> <br>     
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">IntelliJ</button>
-          </li> 
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Eclipse</button>
-          </li> 
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">VS Code</button>
-          </li>       
-        </ul>
-                                         
-          <br><br>                         
-          <div class="subheading mb-3">Soft Skills</div>
-          <ul  class="list-inline  dev-icons" > 
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Problem Solving</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Crital Thinking</button>
-          </li>    
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Creativity and Innovation</button>
-          </li>                  
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Team Work</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Effective Communication</button>
-          </li>          
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Adaptability</button>
-          </li>
-          <li class="list-inline-item">
-            <button type="button" class="btn btn-primary">Empathy</button>
-          </li>               
-        </ul>
-
-
-      </div>
-    </section>
-
-    <hr class="m-0">
-
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
-      <div class="w-100">
-        <h2 class="mb-5">Projects</h2>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-4 p-2">
-              <div class="card h-100" >
-                <img class="card-img-top" src="img/aws-comprehend.png" alt=aws-comprehend">
-                <div class="card-body">
-                  <h5 class="card-title">Sentiment Analysis</h5>
-                  <p class="card-text">This is an application which will analyse the text by calling AWS Lambda Endpoint URL. Lamba function has the implementation of AWS Comprehend service. UI is created in nodeJS. <br>This application is hosted on <a href= "http://18.188.225.28:3300/" target="_blank">EC2 instance.</a></p>
-                  <p><button type="button" class="btn btn-outline-info btn-sm">AWS Lamba</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">AWS Comprehend</button></p>
-                   <p>   <button type="button" class="btn btn-outline-info btn-sm">Java</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Node.js</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">EC2 instance</button></p>
-                  <center><a href="https://github.com/shilpisirohi12/text-Analysis-AWS-Comprehend" target="_blank" class="btn btn-primary">Github Repo</a></center>
+                    <div class="stats-row">
+                        <div class="stat"><span class="stat-n">13+</span><span class="stat-l">Years Exp.</span></div>
+                        <div class="stat"><span class="stat-n">5</span><span class="stat-l">Companies</span></div>
+                        <div class="stat"><span class="stat-n">3</span><span class="stat-l">Certifications</span></div>
+                        <div class="stat"><span class="stat-n">3</span><span class="stat-l">Projects</span></div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-md-4 p-2">
-              <div class="card h-100" >
-                <img class="card-img-top" src="/img/ridemart.png" alt="Dashboard">
-                <div class="card-body">
-                  <h5 class="card-title">Dashboard For motorcycle Crashes</h5>
-                  <p class="card-text">Developed a dashboard to show different statistics on Motorcycle crash data of Florida which is provided by FDOT. API is created to fetch, analyse and manipulate data from database.
-                  UI will fetch the data using API endpoints and display on the browser. </p>
-                  <p><button type="button" class="btn btn-outline-info btn-sm">Flask</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Python</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Pandas</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">mySQL</button></p>
-                    <p></p><button type="button" class="btn btn-outline-info btn-sm">Node.js</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Express.js</button>                  
-                    <button type="button" class="btn btn-outline-info btn-sm">Chart.js</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Leaflet</button></p>
-                    <p><button type="button" class="btn btn-outline-info btn-sm">Bootstrap 4</button></p>
+            </section>
+
+            <!-- Experience -->
+            <section class="section reveal" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <div class="tl-head">
+                                <div>
+                                    <h3>Senior Specialist – Software Engineering</h3>
+                                    <p class="tl-company">LTIMindtree · Client: Citibank</p>
+                                </div>
+                                <span class="tl-date">Sep 2021 – Present</span>
+                            </div>
+                            <ul class="tl-bullets">
+                                <li>Led scalable Java application design using Spring Framework, RESTful APIs, and
+                                    microservices architecture</li>
+                                <li>Managed deployment scripts, collaborated with QA teams, and provided production
+                                    support</li>
+                                <li>Participated in agile ceremonies, architectural discussions, and peer code reviews
+                                </li>
+                                <li class="tl-extra"> Designed and developed scalable and high-performance Java
+                                    applications using Spring Framework</li>
+                                <li class="tl-extra">Implemented RESTful APIs and integrated third-party services into
+                                    the application using Spring Boot</li>
+                                <li class="tl-extra">Create the scripts to deploy the applications on open-source
+                                    private cloud</li>
+                                <li class="tl-extra">Collaborated with QA/Testing teams to ensure high-quality software
+                                    delivery through unit testing, integration testing, and bug fixing</li>
+                                <li class="tl-extra">Resolved complex technical issues and provided support during
+                                    production deployments</li>
+                                <li class="tl-extra">Co-ordinate with the Business Analysis team to understand the
+                                    requirements effectively and prepare high level design documents with the help of
+                                    the team</li>
+                                <li class="tl-extra">Prepare L0, L1, L2 & L3 estimates for the frozen change requests
+                                    and list detailed tasks for each change request for a release with lead’s help and
+                                    explain the team about their expected contribution</li>
+                                <li class="tl-extra">Adhere to agile development methodologies, including sprint
+                                    planning, daily stand-ups, and respective meetings</li>
+                                <li class="tl-extra">Identify and maintain action items and issue lists during code
+                                    development and mitigate risks for each change request and release cycle and prepare
+                                    risk mitigation plan</li>
+                                <li class="tl-extra">Involved in project architectural discussion and provide inputs to
+                                    prepare the technical architecture using UML Diagram</li>
+                                <li class="tl-extra">Perform code review, code linting, task review, unit & integration
+                                    testing, defects review and consistently follow up and guide the team on controlling
+                                    the residual defects</li>
+                                <li class="tl-extra">Adhere to ethical standards and maintain integrity in work while
+                                    dealing with confidential data or sensitive information</li>
+                                <li class="tl-extra">Implement proprietary technologies, tools, and methodologies</li>
+                                <li class="tl-extra">Migrate the classical application to microservices</li>
+                            </ul>
+                            <button class="tl-expand-btn" aria-expanded="false">
+                                Show more <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" width="14" height="14">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="tags">
+                                <span class="tag">Java</span><span class="tag">Spring Boot</span><span
+                                    class="tag">Microservices</span><span class="tag">Kafka</span><span
+                                    class="tag">RESTful APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <div class="tl-head">
+                                <div>
+                                    <h3>Java Software Developer</h3>
+                                    <p class="tl-company">Millennium Software Inc · Client: Ford Motor Credit</p>
+                                </div>
+                                <span class="tl-date">Feb 2021 – Sep 2021</span>
+                            </div>
+                            <ul class="tl-bullets">
+                                <li>Designed cloud-native finance domain applications with full CI/CD pipeline
+                                    integration</li>
+                                <li>Built secure RESTful Spring Boot web services using a test-driven development
+                                    approach</li>
+                                <li>Collaborated with cross-functional teams to deliver features on aggressive timelines
+                                </li>
+                                <li class="tl-extra">Lead the end to end design and development of cloud native
+                                    applications in the finance domain</li>
+                                <li class="tl-extra">Developed the highly scalable applications and comply with industry
+                                    standards</li>
+                                <li class="tl-extra">Developed highly secure restful spring boot webservices by applying
+                                    Test driven approach/li>
+                                <li class="tl-extra">Build the CI/CD pipelines for APIs and deploy the APIs on PCF cloud
+                                </li>
+                                <li class="tl-extra">Setup tools for the continous monitoring of the applications on the
+                                    cloud</li>
+                                <li class="tl-extra">Modernize the old process and applications</li>
+                            </ul>
+                            <button class="tl-expand-btn" aria-expanded="false">
+                                Show more <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" width="14" height="14">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="tags">
+                                <span class="tag">Spring Boot</span><span class="tag">Cloud-native</span><span
+                                    class="tag">CI/CD</span><span class="tag">TDD</span><span class="tag">OAuth2</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <div class="tl-head">
+                                <div>
+                                    <h3>Graduate Research Assistant</h3>
+                                    <p class="tl-company">University of South Florida</p>
+                                </div>
+                                <span class="tl-date">Dec 2019 – Dec 2020</span>
+                            </div>
+                            <ul class="tl-bullets">
+                                <li>Design and developed web application in JavaScript (Node.js, Express.js, Charts.js
+                                    and leaflet.js) for motorcycle accidents in Florida</li>
+                                <li>Build restful web service by writing AWS Lambda functions in java to automate the
+                                    process of information retrieval, verify accuracy and completeness of data</li>
+                                <li>Built an Express.js REST API backend to serve processed crash data to frontend
+                                    dashboards</li>
+                                <li class="tl-extra">Deploy the visualization tool on EC2 Linux instance, and database
+                                    on AWS RDS</li>
+                                <li class="tl-extra">Migrate existing WordPress websites to AWS and set up CI/CD
+                                    pipeline</li>
+                            </ul>
+                            <button class="tl-expand-btn" aria-expanded="false">
+                                Show more <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" width="14" height="14">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="tags">
+                                <span class="tag">Node.js</span><span class="tag">AWS Lambda</span><span class="tag">EC2
+                                    / RDS</span><span class="tag">Leaflet.js</span><span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <div class="tl-head">
+                                <div>
+                                    <h3>Applications Engineer</h3>
+                                    <p class="tl-company">Oracle Corporation</p>
+                                </div>
+                                <span class="tl-date">Feb 2014 – Dec 2018</span>
+                            </div>
+                            <ul class="tl-bullets">
+                                <li>Led system design for service and log management tools — won Oracle Innovation Award
+                                </li>
+                                <li>Optimized SQL query performance, cutting report generation time by 50%</li>
+                                <li>Developed mapping and geolocation features using REST APIs and third-party
+                                    integrations</li>
+                                <li class="tl-extra">Lead the system design and feature development lifecycle to view
+                                    and manage the services, processes, and application logs by using java and spring
+                                    boot technologies. It reduced the ticket resolution time of L2 Support Team</li>
+                                <li class="tl-extra">Developed MySQL scripts to automate the validation process of the
+                                    large-scale data, reduced the data load time by 10% by fine-tuning the existing
+                                    functions and queries</li>
+                                <li class="tl-extra">Developed Unix scripts to automatically send alerts in case of
+                                    delays and failures</li>
+                                <li class="tl-extra">Driven the team of two developers with agile and lean philosophies
+                                    to deliver major Dataraker product integration with Meter Data Management (MDM)
+                                    Oracle utility by building REST APIs in Java</li>
+                                <li class="tl-extra">Won cash award at Annual Innovation Summit for recommendation to
+                                    automate formerly manual process of creating customer XMLs with a new Windows
+                                    Desktop tool in JavaFX</li>
+                                <li class="tl-extra">Conceptualized and released features to show and color-code meter
+                                    transformer, grids, and customer data on maps using Java REST API and JavaScript
+                                    library with longitude and latitude positioning</li>
+                                <li class="tl-extra">Collaborate with different teams, train, and mentor team members
+                                    and clients</li>
+                            </ul>
+                            <button class="tl-expand-btn" aria-expanded="false">
+                                Show more <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" width="14" height="14">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="tags">
+                                <span class="tag">Java</span><span class="tag">Oracle DB</span><span class="tag">REST
+                                    APIs</span><span class="tag">System Design</span><span class="tag">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tl-item">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <div class="tl-head">
+                                <div>
+                                    <h3>Software Engineer</h3>
+                                    <p class="tl-company">Tech Mahindra · Client: Thomson Reuters</p>
+                                </div>
+                                <span class="tl-date">Dec 2010 – Feb 2014</span>
+                            </div>
+                            <ul class="tl-bullets">
+                                <li>Built Java solutions for high-volume financial data processing pipelines</li>
+                                <li>Achieved 25% profitability increase through performance tuning and process
+                                    optimization</li>
+                                <li>Developed batch processing utilities for large-scale financial data transformation
+                                </li>
+                                <li class="tl-extra">Engaged with clients to understand and document requirements,
+                                    prioritize features, and finalize development schedules</li>
+                                <li class="tl-extra">Wrote code and completed unit testing in Java and JUnit to receive
+                                    XML files from MQ, parse files, and load data into database</li>
+                                <li class="tl-extra">Carried out performance unit testing, system testing, user
+                                    acceptance testing, and business verification testing. Provided post-production
+                                    support</li>
+                                <li class="tl-extra">Generated 25% increase in profitability in APAC and Americas for
+                                    Thomson Reuters by delivering capability to calculate total cost of products and
+                                    services per subscriber</li>
+                                <li class="tl-extra">Recognized as top scorer in completion of three-month onboarding
+                                    program</li>
+                            </ul>
+                            <button class="tl-expand-btn" aria-expanded="false">
+                                Show more <svg class="expand-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" width="14" height="14">
+                                    <polyline points="6 9 12 15 18 9" />
+                                </svg>
+                            </button>
+                            <div class="tags">
+                                <span class="tag">Java</span><span class="tag">Data Processing</span><span
+                                    class="tag">SQL</span><span class="tag">JUnit</span><span class="tag">Agile</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
-            </div>  
-            <div class="col-md-4 p-2">
-              <div class="card h-100">
-                <img class="card-img-top" src="/img/twitter.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">NLP: Tweets Analysis</h5>
-                  <p class="card-text">Fetch real time tweets using twitter API. Clean the tweets. Analyse the tweets to see if they are positive or negative using TextBlob library. Create the graph which shows the trend.</p>
-                  <p><button type="button" class="btn btn-outline-info btn-sm">Python</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Jupyter Notebook</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">Pandas</button></p>
-                    <p></p><button type="button" class="btn btn-outline-info btn-sm">Tweepy</button>
-                    <button type="button" class="btn btn-outline-info btn-sm">TextBlob</button>                  
-                    <button type="button" class="btn btn-outline-info btn-sm">Matplotlib</button></p><br><br>
-                  <center><a href="https://github.com/shilpisirohi12/Simple-Sentiment-Analysis-for-Tweets" target="_blank" class="btn btn-primary">Github Repo</a></center>
+            </section>
+
+            <!-- Education -->
+            <section class="section reveal" id="education">
+                <h2 class="section-title">Education</h2>
+                <div class="edu-list">
+
+                    <div class="edu-card">
+                        <div class="edu-year">2019–2020</div>
+                        <div class="edu-body">
+                            <h3>M.S. in Computer Science</h3>
+                            <p class="edu-school">University of South Florida</p>
+                            <p class="edu-meta">GPA: 3.83 / 4.0 · Research in data visualization &amp; cloud computing
+                            </p>
+                        </div>
+                        <div class="edu-badge">🎓</div>
+                    </div>
+
+                    <div class="edu-card">
+                        <div class="edu-year">2007–2010</div>
+                        <div class="edu-body">
+                            <h3>M.S. in Computer Applications</h3>
+                            <p class="edu-school">Uttar Pradesh Technical University</p>
+                            <p class="edu-meta">GPA: 3.37 / 4.0 · Software engineering foundations</p>
+                        </div>
+                        <div class="edu-badge">📚</div>
+                    </div>
+
+                    <div class="edu-card">
+                        <div class="edu-year">2004–2007</div>
+                        <div class="edu-body">
+                            <h3>B.S. in Mathematics &amp; Statistics</h3>
+                            <p class="edu-school">Choudhary Charan Singh University</p>
+                            <p class="edu-meta">GPA: 3.12 / 4.0 · Strong analytical foundations</p>
+                        </div>
+                        <div class="edu-badge">🏫</div>
+                    </div>
+
                 </div>
-              </div>
-            </div>                       
-          </div>
-       </div> 
-      </div>
-    </section>
+            </section>
 
-    <hr class="m-0">
+            <!-- Skills -->
+            <section class="section reveal" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-      <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
-        <p>Apart from being a Software developer, I enjoy most of my time doing DIY crafts and reading books on my Kindle. </p>
-        <p class="mb-0">I follow a number of comedy and documentries genre movies and television shows, I am a master chef, and I spend a large amount of my free time exploring the latest technology advancements in the artificial intelligence world and AI tools for coding like github copilot.</p>
-      </div>
-    </section>
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Languages &amp; Frameworks</h3>
+                        <div class="skill-bars">
+                            <div class="skill-row"><span class="skill-name">Java 8 / Spring Framework</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:95%"></div>
+                                </div><span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Spring Boot / Hibernate</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:93%"></div>
+                                </div><span class="skill-pct">93%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Python</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:75%"></div>
+                                </div><span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Node.js / Express</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:70%"></div>
+                                </div><span class="skill-pct">70%</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <hr class="m-0">
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">APIs &amp; Databases</h3>
+                        <div class="skill-bars">
+                            <div class="skill-row"><span class="skill-name">RESTful APIs / Swagger</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:95%"></div>
+                                </div><span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">SQL Databases</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:88%"></div>
+                                </div><span class="skill-pct">88%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Kafka</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:72%"></div>
+                                </div><span class="skill-pct">72%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">JUnit / Mockito</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:85%"></div>
+                                </div><span class="skill-pct">85%</span>
+                            </div>
+                        </div>
+                    </div>
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Oracle Certified Professional: Java SE 11 Developer.  <a href="https://www.credly.com/badges/c3084279-8ac8-4b76-a1f5-edcd4e34fc34" target=_blank>view certificate</a>
-          </li> 
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Certified SAFe® 6 Scrum Master.  <a href="https://www.credly.com/badges/364ebe8d-c6c7-488c-811b-23249cd9b933" target=_blank>view certificate</a>
-          </li>           
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            AWS Certified Solutions Architect – Associate.  <a href="https://www.youracclaim.com/badges/9830d9c9-5395-4923-8dcb-b3003366f4e6" target=_blank>view certificate</a>
-          </li>                            
-        </ul>
-      </div>
-    </section>
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Cloud &amp; DevOps</h3>
+                        <div class="skill-bars">
+                            <div class="skill-row"><span class="skill-name">AWS (Lambda, EC2, RDS)</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:82%"></div>
+                                </div><span class="skill-pct">82%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">PCF Cloud / OpenShift</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:75%"></div>
+                                </div><span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Jenkins / CI/CD</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:80%"></div>
+                                </div><span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Maven / Gradle</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:88%"></div>
+                                </div><span class="skill-pct">88%</span>
+                            </div>
+                        </div>
+                    </div>
 
-  </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group-title">Tools &amp; Practices</h3>
+                        <div class="skill-bars">
+                            <div class="skill-row"><span class="skill-name">GitHub / IntelliJ / VS Code</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:95%"></div>
+                                </div><span class="skill-pct">95%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Splunk / Monitoring</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:72%"></div>
+                                </div><span class="skill-pct">72%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Agile / SAFe / Scrum</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:90%"></div>
+                                </div><span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-row"><span class="skill-name">Chart.js / Leaflet.js</span>
+                                <div class="bar">
+                                    <div class="bar-fill" style="--w:65%"></div>
+                                </div><span class="skill-pct">65%</span>
+                            </div>
+                        </div>
+                    </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                </div>
+            </section>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+            <!-- Projects -->
+            <section class="section reveal" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
 
-  <!-- Custom scripts for this template -->
-  <script src="js/resume.min.js"></script>
+                    <div class="proj-card">
+                        <div class="proj-top">
+                            <div class="proj-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+                                    height="22">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 8v4l3 3" />
+                                </svg>
+                            </div>
+                            <div class="proj-links">
+                                <a href="http://18.188.225.28:3300/" target="_blank" rel="noopener"
+                                    class="proj-link live">Live ↗</a>
+                            </div>
+                        </div>
+                        <h3>Sentiment Analysis App</h3>
+                        <p>AWS Lambda-powered text analysis with a Node.js front-end UI. Users input text and receive
+                            real-time sentiment scores using Amazon Comprehend.</p>
+                        <div class="tags">
+                            <span class="tag">Java</span><span class="tag">Node.js</span><span class="tag">AWS
+                                Lambda</span><span class="tag">Comprehend</span><span class="tag">EC2</span>
+                        </div>
+                    </div>
 
+                    <div class="proj-card">
+                        <div class="proj-top">
+                            <div class="proj-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+                                    height="22">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path d="M3 9h18M9 21V9" />
+                                </svg>
+                            </div>
+                            <div class="proj-links"></div>
+                        </div>
+                        <h3>Motorcycle Crash Dashboard</h3>
+                        <p>Statistical visualization of Florida crash data with an API backend. Features interactive
+                            maps, charts, and filters for research analysis.</p>
+                        <div class="tags">
+                            <span class="tag">Flask</span><span class="tag">Python</span><span
+                                class="tag">Pandas</span><span class="tag">MySQL</span><span
+                                class="tag">Chart.js</span><span class="tag">Leaflet</span>
+                        </div>
+                    </div>
+
+                    <div class="proj-card">
+                        <div class="proj-top">
+                            <div class="proj-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="22"
+                                    height="22">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                </svg>
+                            </div>
+                            <div class="proj-links">
+                                <a href="https://github.com/shilpisirohi12/Simple-Sentiment-Analysis-for-Tweets"
+                                    target="_blank" rel="noopener" class="proj-link">GitHub ↗</a>
+                            </div>
+                        </div>
+                        <h3>NLP: Tweets Sentiment Analysis</h3>
+                        <p>Real-time tweet sentiment classification and trend visualization. Classifies tweets as
+                            positive, negative, or neutral with Matplotlib charts.</p>
+                        <div class="tags">
+                            <span class="tag">Python</span><span class="tag">Jupyter</span><span
+                                class="tag">Tweepy</span><span class="tag">TextBlob</span><span
+                                class="tag">Matplotlib</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section class="section reveal" id="certifications">
+                <h2 class="section-title">Certifications</h2>
+                <div class="cert-list">
+
+                    <div class="cert-card">
+                        <div class="cert-badge oracle">Oracle</div>
+                        <div class="cert-body">
+                            <h3>Oracle Certified Professional: Java SE 11 Developer</h3>
+                            <p class="cert-issuer">Oracle Corporation</p>
+                            <p class="cert-sub">Java SE 11 · Professional Level</p>
+                        </div>
+                        <div class="cert-check">✓</div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-badge safe">SAFe</div>
+                        <div class="cert-body">
+                            <h3>Certified SAFe® 6 Scrum Master</h3>
+                            <p class="cert-issuer">Scaled Agile, Inc.</p>
+                            <p class="cert-sub">SAFe 6 · Scrum Master</p>
+                        </div>
+                        <div class="cert-check">✓</div>
+                    </div>
+
+                    <div class="cert-card">
+                        <div class="cert-badge aws">AWS</div>
+                        <div class="cert-body">
+                            <h3>AWS Certified Solutions Architect – Associate</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                            <p class="cert-sub">Cloud Architecture · Associate Level</p>
+                        </div>
+                        <div class="cert-check">✓</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Interests -->
+            <section class="section reveal" id="interests">
+                <h2 class="section-title">Interests</h2>
+                <div class="interests-grid">
+                    <div class="interest-card"><span class="int-icon">🤖</span>
+                        <h3>AI &amp; Coding Tools</h3>
+                        <p>Exploring AI advancements and developer tools shaping software engineering.</p>
+                    </div>
+                    <div class="interest-card"><span class="int-icon">🎨</span>
+                        <h3>DIY Crafts</h3>
+                        <p>Creative hands-on projects as a way to unwind outside of code.</p>
+                    </div>
+                    <div class="interest-card"><span class="int-icon">📖</span>
+                        <h3>Reading</h3>
+                        <p>Avid Kindle reader — tech books and stories that broaden perspective.</p>
+                    </div>
+                    <div class="interest-card"><span class="int-icon">🎬</span>
+                        <h3>Comedy &amp; Docs</h3>
+                        <p>Comedy shows and thought-provoking documentaries on science &amp; culture.</p>
+                    </div>
+                    <div class="interest-card"><span class="int-icon">🍳</span>
+                        <h3>Culinary Pursuits</h3>
+                        <p>Experimenting with recipes and exploring global cuisines.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section class="section reveal" id="contact">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-box">
+                    <p>I'm open to new opportunities — whether you have a role to discuss, a project idea, or just want
+                        to connect.</p>
+                    <a href="mailto:shilpisirohi12@gmail.com" class="contact-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"
+                            height="18">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        Say Hello
+                    </a>
+                    <div class="contact-links">
+                        <a href="https://github.com/shilpisirohi12" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://linkedin.com/in/shilpisirohi" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="tel:6477012376">(647) 701-2376</a>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p>Designed &amp; Built by <strong>Shilpi Sirohi</strong> · Hosted on GitHub Pages</p>
+            </footer>
+
+        </main>
+    </div><!-- /layout -->
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

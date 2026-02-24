@@ -4,7 +4,7 @@ Created static resume website using Claude Code which can be deployed as github 
 
 ## CLAUDE.md
 
-This file is the mind which is used by cluade to create the application.
+This file is the mind which is used by claude to create the application.
 
 ## Benefit of creating CLAUDE.md using /init
 
@@ -34,4 +34,4 @@ These is the best way to create a CLAUDE.md file. It will create a CLAUDE.md fil
 
 CLAUDE-manual.md - This file contains the manual thought process to create the application. This is used to document the thought process and can be used to recreate the application in future.
 
-CLAUDE.md - This file contains the memory which is used by cluade to create the application. This is created later once the application is created by running /init command in claude code. This is used to provide context to cluade to create the application.
+CLAUDE.md - This file contains the memory which is used by cluade to create the application. This is created later once the application is created by running /init command in claude code. This is used to provide context to claude to create the application.

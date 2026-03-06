@@ -1,60 +1,126 @@
-# CLAUDE.md
+# Shilpi Sirohi — Static Portfolio Website
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+A static single-page portfolio built with vanilla HTML, CSS, and JavaScript.
+Compatible with GitHub Pages. Live site: https://shilpisirohi.com/
 
-## Project Overview
+---
 
-A static portfolio website for Shilpi Sirohi, deployed on GitHub Pages at `shilpisirohi12.github.io`. No build system, no package manager, no dependencies — pure HTML, CSS, and vanilla JS.
+## Project Structure
 
-## Development
-
-Open `index.html` directly in a browser. No build step or server required. For live reload, use any static server:
-
-```bash
-npx serve .
-# or
-python -m http.server 8080
+```
+learn-claude/
+├── index.html          # Single page — all sections here
+├── css/
+│   └── style.css       # All styles, themes, responsive breakpoints
+├── js/
+│   └── script.js       # Theme toggle, scroll animations, nav, expand/collapse
+├── images/
+│   ├── image.png       # Color scheme reference
+│   └── image-1.png     # Theme toggle button reference
+└── CLAUDE.md
 ```
 
-Deploy by pushing to the `master` branch — GitHub Pages auto-publishes from there. The `CNAME` file controls the custom domain.
+---
 
-## Architecture
+## Sections (in order)
 
-**Single-page layout:** `index.html` is the entire site. All content lives inline; it is the source of truth for personal data (name, jobs, skills, etc.).
+| Section        | ID                 | Notes                                              |
+|----------------|--------------------|----------------------------------------------------|
+| About          | `#about`           | Full-width, info grid (4-col), 4 stat cards        |
+| Experience     | `#experience`      | Timeline cards, show 3 bullets, expand to show all |
+| Education      | `#education`       | Cards with year, degree, school, GPA               |
+| Skills         | `#skills`          | Animated bar charts, triggered on scroll           |
+| Projects       | `#projects`        | Cards with live/GitHub links and tech tags         |
+| Certifications | `#certifications`  | Oracle, SAFe, AWS cards with colored badges        |
+| Interests      | `#interests`       | Icon cards grid                                    |
+| Contact        | `#contact`         | Email CTA + social links                           |
 
-**Two-column layout:** A fixed-width sidebar (`<aside class="sidebar">`) + scrollable main content (`<main class="main-content">`). On screens ≤960px the sidebar hides and a mobile header with a hamburger drawer replaces it.
+---
 
-**Theming:** CSS custom properties in `:root` (dark) and `[data-theme="light"]` blocks in `css/style.css` control all colors. Switching themes sets `data-theme` on `<html>` and persists via `localStorage`.
+## Left Sidebar (desktop only, sticky)
 
-**Key CSS patterns:**
+- Avatar (initials "SS", gradient circle)
+- Name: Shilpi Sirohi
+- Title: Senior Software Engineer
+- Subtitle: Java · Spring Boot · AI Enthusiast · AWS Cloud
+- Location: Mississauga, ON
+- Navigation links (all 8 sections, with SVG icons)
+- Social icons: GitHub, LinkedIn, Email (each with `aria-label`)
+- Resume button → `resume.pdf`
+- Theme toggle pill (Night Mode / Day Mode) — matches `images/image-1.png`
 
-- `.reveal` / `.reveal.visible` — scroll-triggered fade-in (IntersectionObserver in `js/script.js`)
-- `.bar-fill` / `.bar-fill.animated` — skill bar animation, triggered when `#skills` scrolls into view; percentage set via `style="--w:XX%"`
-- `.tl-extra` / `.tl-card.expanded` — extra experience bullets hidden by default, shown when card gets `.expanded` class
-- `.tl-expand-btn` — the Show more/less toggle button inside each experience card
+On mobile (<960px): sidebar is hidden; replaced by a fixed top header with burger menu + drawer nav.
 
-**JS responsibilities** (`js/script.js`):
+---
 
-- Theme toggle (both sidebar `#themeToggle2` and mobile `#themeToggle`)
-- Mobile burger menu open/close
-- Active sidebar nav link tracking on scroll
-- Scroll reveal observer
-- Skill bar animation observer
-- Experience expand/collapse
-- Smooth scroll for anchor links
+## Theme
 
-## Content Editing Guide
+- Default: **dark** (deep navy `#060e20` + mint `#00e5b0`)
+- Light: white/blue (`#f0f8ff` + royal blue `#1565c0`)
+- Persisted in `localStorage`
+- Toggle updates both sidebar pill and mobile emoji button
 
-All personal content is in `index.html`:
+---
 
-- **Sidebar:** name, title, subtitle, location, nav links, social URLs, resume PDF link — inside `<aside class="sidebar">`
-- **About:** paragraphs, info grid (location/email/phone/status), stats row — `<section id="about">`
-- **Experience:** each job is a `.tl-item`; first 3 `<li>` are always visible, additional ones need class `tl-extra`
-- **Skills:** each `.bar-fill` has `style="--w:XX%"` for the bar width and a sibling `.skill-pct` span for the label
-- **Projects:** `.proj-card` blocks; add `class="proj-link live"` for live demo links
-- **Certifications:** `.cert-badge` color set by class (`oracle`, `safe`, `aws`)
-- **Resume:** replace `Shilpi_Sirohi-Resume.pdf` in the root; the `href` is in the sidebar `.resume-btn`
+## Key Behaviors (JavaScript)
 
-## Design Tokens
+- **Theme toggle** — both sidebar (`#themeToggle2`) and mobile (`#themeToggle`) buttons call `applyTheme()`
+- **Active nav** — sidebar nav item highlights based on scroll position
+- **Scroll reveal** — `.reveal` elements fade in via `IntersectionObserver`
+- **Skill bars** — `.bar-fill` elements animate (`scaleX 0→1`) when `#skills` scrolls into view; staggered by 60ms per bar
+- **Experience expand** — `.tl-expand-btn` toggles `.expanded` on `.tl-card`; extra bullets use class `.tl-extra`
+- **Smooth scroll** — all `a[href^="#"]` anchors use `scrollTo` with mobile offset (64px)
 
-Dark theme accent: `#00e5b0` (mint green). Light theme accent: `#1565c0` (royal blue). Background layers: `--bg` → `--bg-surface` → `--bg-card` (progressively lighter). All defined in the `:root` block at the top of `css/style.css`.
+---
+
+## SEO & Accessibility (added)
+
+- `<meta name="description">` — keyword-rich summary
+- `<meta name="author">`, `<meta name="robots">`, `<link rel="canonical">`
+- Open Graph tags: `og:type`, `og:title`, `og:description`, `og:url`, `og:site_name`
+- Twitter Card meta tags
+- JSON-LD `schema.org/Person` structured data (name, job title, email, location, social links, skills)
+- `<link rel="preload" as="style">` for Google Fonts CSS
+- `aria-label` on all social icon links
+- `aria-expanded` on experience expand buttons
+
+---
+
+## Design References
+
+- Color scheme: `images/image.png` (blue/teal dark palette)
+- Theme toggle: `images/image-1.png` (pill with circular thumb, DAY/NIGHT label)
+- Inspiration: https://github.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code
+
+---
+
+## Responsive Breakpoints
+
+| Breakpoint   | Behavior                                              |
+|--------------|-------------------------------------------------------|
+| >960px       | Sidebar visible, main content beside it               |
+| ≤960px       | Sidebar hidden, mobile header + drawer shown          |
+| ≤640px       | Single-column grids, reduced padding, stacked layouts |
+
+---
+
+## Deployment (GitHub Pages)
+
+1. Push repo to GitHub
+2. Go to Settings → Pages → Source: `main` branch, `/ (root)`
+3. Place `resume.pdf` in the root folder before deploying
+4. Site will be live at `https://<username>.github.io/<repo>/`
+5. Update `<link rel="canonical">` and JSON-LD `url` fields to match live URL
+
+---
+
+## How to Update Content
+
+All content is in `index.html`. Each section is clearly commented:
+- `<!-- About -->`, `<!-- Experience -->`, etc.
+- Add a new experience: copy a `.tl-item` block and update text/tags
+- Add a skill bar: copy a `.skill-row` block and set `style="--w:XX%"`
+- Add a project: copy a `.proj-card` block
+- Add a certification: copy a `.cert-card` block
+
+To change colors/fonts, edit CSS custom properties at the top of `css/style.css`.
